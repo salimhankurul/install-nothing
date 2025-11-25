@@ -1,0 +1,33 @@
+{
+  "name": "install-nothing",
+  "version": "1.0.7",
+  "description": "The perfect coffee break companion - watch an endless, realistic Linux terminal installation that never actually installs anything",
+  "main": "index.js",
+  "bin": {
+    "install-nothing": "./index.js"
+  },
+  "scripts": {
+    "test": "node index.js",
+    "publish:npm": "npm publish --registry=https://registry.npmjs.org/",
+    "publish:gh": "npm publish --registry=https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "cli",
+    "terminal",
+    "install",
+    "simulator",
+    "prank",
+    "coffee-break",
+    "install-nothing",
+    "fake-install"
+  ],
+  "author": "salimhankurul",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salimhankurul/install-nothing.git"
+  }
+}
