@@ -1,0 +1,16 @@
+.git
+.gitignore
+node_modules
+.env
+.DS_Store
+*.log
+__tests__/
+*.test.js
+jest.config.js
+.vscode
+.idea
+coverage/
+.editorconfig
+test-helpers.js
+.github/
+.nodemonrc.json

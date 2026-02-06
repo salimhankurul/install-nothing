@@ -1,15 +1,70 @@
 {
   "name": "install-nothing",
-  "version": "1.0.7",
-  "description": "The perfect coffee break companion - watch an endless, realistic Linux terminal installation that never actually installs anything",
-  "main": "index.js",
+  "version": "1.1.0",
+  "description": "An endless fake installer with beautiful terminal output and customizable themes/styles",
+  "main": "cli.js",
   "bin": {
-    "install-nothing": "./index.js"
+    "install-nothing": "cli.js"
   },
   "scripts": {
-    "test": "node index.js",
-    "publish:npm": "npm publish --registry=https://registry.npmjs.org/",
-    "publish:gh": "npm publish --registry=https://npm.pkg.github.com/"
+    "start": "node cli.js",
+    "dev": "nodemon --exec node cli.js",
+    "dev:watch": "nodemon --exec node cli.js",
+    "dev:dark": "nodemon --exec 'THEME=dark node cli.js'",
+    "dev:matrix": "nodemon --exec 'THEME=matrix node cli.js'",
+    "dev:cyberpunk": "nodemon --exec 'THEME=cyberpunk node cli.js'",
+    "dev:edit": "nodemon --exec 'node cli.js --edit'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage --maxWorkers=2",
+    "help": "node cli.js --help",
+    "run": "node cli.js",
+    "run:default": "node cli.js",
+    "run:interactive": "node cli.js --custom",
+    "run:custom": "node cli.js --custom",
+    "run:edit": "node cli.js --edit",
+    "run:customize": "node cli.js --customize",
+    "run:config": "node cli.js --config",
+    "run:reset": "node cli.js --reset",
+    "run:help": "node cli.js --help",
+    "run:dark": "THEME=dark node cli.js",
+    "run:light": "THEME=light node cli.js",
+    "run:matrix": "THEME=matrix node cli.js",
+    "run:cyberpunk": "THEME=cyberpunk node cli.js",
+    "run:retro": "THEME=retro node cli.js",
+    "run:ocean": "THEME=ocean node cli.js",
+    "run:sunset": "THEME=sunset node cli.js",
+    "run:theme:dark": "THEME=dark node cli.js",
+    "run:theme:light": "THEME=light node cli.js",
+    "run:theme:matrix": "THEME=matrix node cli.js",
+    "run:theme:cyberpunk": "THEME=cyberpunk node cli.js",
+    "run:theme:retro": "THEME=retro node cli.js",
+    "run:theme:ocean": "THEME=ocean node cli.js",
+    "run:theme:sunset": "THEME=sunset node cli.js",
+    "run:style:modern": "STYLE=modern node cli.js",
+    "run:style:classic": "STYLE=classic node cli.js",
+    "run:style:minimal": "STYLE=minimal node cli.js",
+    "run:style:retro_dos": "STYLE=retro_dos node cli.js",
+    "run:style:fish": "STYLE=fish node cli.js",
+    "run:style:powerline": "STYLE=powerline node cli.js",
+    "run:modern": "STYLE=modern node cli.js",
+    "run:classic": "STYLE=classic node cli.js",
+    "run:minimal": "STYLE=minimal node cli.js",
+    "run:retro_dos": "STYLE=retro_dos node cli.js",
+    "run:fish": "STYLE=fish node cli.js",
+    "run:powerline": "STYLE=powerline node cli.js",
+    "run:combo:matrix-classic": "THEME=matrix STYLE=classic node cli.js",
+    "run:combo:cyberpunk-fish": "THEME=cyberpunk STYLE=fish node cli.js",
+    "run:combo:dark-modern": "THEME=dark STYLE=modern node cli.js",
+    "run:combo:ocean-minimal": "THEME=ocean STYLE=minimal node cli.js",
+    "run:combo:sunset-powerline": "THEME=sunset STYLE=powerline node cli.js",
+    "run:combo:retro-retro_dos": "THEME=retro STYLE=retro_dos node cli.js",
+    "run:combo:light-classic": "THEME=light STYLE=classic node cli.js",
+    "lint": "echo 'No linter configured'",
+    "format": "echo 'No formatter configured'",
+    "build": "echo 'No build step required'",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "cli",
@@ -29,5 +84,21 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/salimhankurul/install-nothing.git"
-  }
+  },
+  "dependencies": {
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nodemon": "^3.0.1"
+  },
+  "files": [
+    "index.js",
+    "themes.json",
+    "styles.json",
+    "lib/",
+    "config/",
+    "README.md",
+    "LICENSE"
+  ]
 }

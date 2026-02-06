@@ -1,0 +1,35 @@
+{
+    "styles": {
+        "modern": {
+            "name": "Modern (ZSH/Powerline)",
+            "format": "modern",
+            "arrow": "➜",
+            "separator": " "
+        },
+        "classic": {
+            "name": "Classic (Bash)",
+            "format": "classic",
+            "separator": "@"
+        },
+        "minimal": {
+            "name": "Minimal",
+            "format": "minimal",
+            "symbol": ">"
+        },
+        "retro_dos": {
+            "name": "Retro DOS",
+            "format": "retro_dos",
+            "symbol": ">"
+        },
+        "fish": {
+            "name": "Fish Shell",
+            "format": "fish",
+            "symbol": "❯"
+        },
+        "powerline": {
+            "name": "Powerline",
+            "format": "powerline",
+            "symbol": "⮚"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "watch": [
+        "cli.js",
+        "installer.js",
+        "lib/",
+        "config/"
+    ],
+    "ignore": [
+        "node_modules/",
+        "__tests__/",
+        "*.test.js",
+        "coverage/",
+        ".git/"
+    ],
+    "delay": 500,
+    "ext": "js,json",
+    "exitOnChange": false,
+    "verbose": true
+}
