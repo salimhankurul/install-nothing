@@ -56,7 +56,7 @@ const displayBanner = () => {
     console.log(`${colors.cyan}${colors.bright}`);
     console.log(`╔════════════════════════════════════════════════════════════╗`);
     console.log(`║                                                            ║`);
-    console.log(`║           🎭  INSTALL NOTHING - INTERACTIVE CLI 🎭        ║`);
+    console.log(`║           🎭  INSTALL NOTHING - INTERACTIVE CLI 🎭         ║`);
     console.log(`║                                                            ║`);
     console.log(`║    An endless fake installer with customizable themes      ║`);
     console.log(`║                                                            ║`);
